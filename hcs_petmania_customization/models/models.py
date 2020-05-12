@@ -15,7 +15,6 @@ class PurchaseOrderLine(models.Model):
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
-    pet = fields.Selection([('cat_food', 'Cat Food'), ('dog_food', 'Dog Food'), ('cat & dog', 'Cat & Dog'),
-                            ('accessories', 'Accessories')])
-    food_type = fields.Selection([('dry', 'Dry'), ('wet', 'Wet')])
+    pet = fields.Selection([('cat_food', 'Cat Food'), ('dog_food', 'Dog Food'), ('accessories', 'Accessories')])
+    food_type = fields.Selection([('dry', 'Dry'), ('wet', 'Wet'), ('none', 'None')])
     product_type = fields.Selection([('local', 'Local'), ('import', 'Import')])
