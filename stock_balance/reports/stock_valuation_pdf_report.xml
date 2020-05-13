@@ -371,7 +371,7 @@
             <field name="default" eval="True"/>
             <field name="orientation">Landscape</field>
             <field name="header_line" eval="True"/>
-            <field name="header_spacing">4</field>
+            <field name="header_spacing">6</field>
             <field name="margin_top">8</field>
             <field name="margin_left">8</field>
             <field name="margin_right">8</field>
@@ -381,7 +381,7 @@
                 id="stock_balance.stock_valuation_pdf_report"
                 string="Stock Balance"
                 model="stock_balance.stock_valuation_wizard"
-                report_type="qweb-html"
+                report_type="qweb-pdf"
                 name="stock_balance.stock_valuation_pdf_report_template"
         />
         <record id="stock_balance.stock_valuation_pdf_report" model="ir.actions.report">
